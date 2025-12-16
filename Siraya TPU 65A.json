@@ -1,0 +1,116 @@
+{
+  
+    "additional_cooling_fan_speed": [
+        "0"
+    ],
+    "cool_plate_temp": [
+        "35"
+    ],
+    "cool_plate_temp_initial_layer": [
+        "35"
+    ],
+    "counter_coef_2": [
+        "0.025"
+    ],
+    "counter_coef_3": [
+        "-0.11"
+    ],
+    "counter_limit_max": [
+        "0.05"
+    ],
+    "counter_limit_min": [
+        "-0.04"
+    ],
+    "eng_plate_temp": [
+        "35"
+    ],
+    "eng_plate_temp_initial_layer": [
+        "35"
+    ],
+    "filament_adhesiveness_category": [
+        "0"
+    ],
+    "filament_cooling_before_tower": [
+        "10"
+    ],
+    "filament_cost": [
+        "39.99"
+    ],
+    "filament_end_gcode": [
+        "; filament end gcode \\nM106 P3 S0\\n\n\n"
+    ],
+    "filament_extruder_variant": [
+        "Direct Drive Standard"
+    ],
+    "filament_flow_ratio": [
+        "0.52"
+    ],
+    "filament_max_volumetric_speed": [
+        "9"
+    ],
+    "filament_ramming_travel_time": [
+        "nil"
+    ],
+    "filament_retract_length_nc": [
+        "10"
+    ],
+    "filament_retraction_length": [
+        "0"
+    ],
+    "filament_scarf_gap": [
+        "0"
+    ],
+    "filament_scarf_height": [
+        "0%"
+    ],
+    "filament_settings_id": [
+        "Siraya TPU 65A"
+    ],
+    "filament_start_gcode": [
+        "; filament start gcode\\n{if  (bed_temperature[current_extruder] >35)||(bed_temperature_initial_layer[current_extruder] >35)}M106 P3 S255\\n{elsif(bed_temperature[current_extruder] >30)||(bed_temperature_initial_layer[current_extruder] >30)}M106 P3 S180\\n{endif}\\n\\n{if activate_air_filtration[current_extruder] && support_air_filtration}\\nM106 P3 S{during_print_exhaust_fan_speed_num[current_extruder]} \\n{endif}"
+    ],
+    "from": "User",
+    "hole_coef_2": [
+        "-0.025"
+    ],
+    "hole_coef_3": [
+        "0.28"
+    ],
+    "hole_limit_max": [
+        "0.25"
+    ],
+    "hole_limit_min": [
+        "0.08"
+    ],
+    "impact_strength_z": [
+        "0"
+    ],
+    "inherits": "Generic TPU",
+    "name": "Siraya TPU 65A",
+    "nozzle_temperature": [
+        "270"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "270"
+    ],
+    "nozzle_temperature_range_high": [
+        "270"
+    ],
+    "nozzle_temperature_range_low": [
+        "240"
+    ],
+    "pre_start_fan_time": [
+        "2"
+    ],
+    "retraction_distances_when_ec": [
+        "10"
+    ],
+    "supertack_plate_temp": [
+        "35"
+    ],
+    "supertack_plate_temp_initial_layer": [
+        "35"
+    ],  
+
+    "version": "2.4.0.7"
+}
