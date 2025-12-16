@@ -1,5 +1,8 @@
-Multi step process used to generate settings in this folder:
-1) Download Air 3mf files from Siraya website (used with thanks! But PLEASE create these as config files or something so i can avoid below...)
+Flex TPU Air 65A-82A Filament
+https://siraya.tech/products/flex-tpu-air-65a-82a-foaming-flexible-filament
+
+Multi step process used to generate settings in this folder. It wasnt as simple as "save the project filament as a user setting" (see bottom ramble):
+1) Download Air 3mf files from Siraya website (https://siraya.tech/pages/print-settings-download leads to a drive link: https://drive.google.com/file/d/1vxeuemK6ZQ2sgDM0BFez1ivRn01X6Du2/view?usp=drive_link used with thanks! But PLEASE if Siraya are reading this: create these as config files or something so i can avoid below... Links given are for P1S but they have for all Bambu printers and other brands. So you can use steps below to create your own user settings from these 3mf)
 2) Save project filament settings as user filament settings (for explanation sake, 'project.json')
 3) Create a new temporary filament based on 'generic tpu': copy the created filament setting from your filaments/base folder (generic.json)
 4) In filament settings 'edit' a generic TPU setting (e.g. the one you just created, or the standard generic direct, whatevevs) and this will form the basis of the new settings ('siraya.json')
