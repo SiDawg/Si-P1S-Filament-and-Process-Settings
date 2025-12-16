@@ -15,8 +15,7 @@ Multi step process used to generate settings in this folder:
 My theory is there's something about project.json which is malformed... it will save, but you can't use it in custom filament... The obvious reason is that the 'inherits' value is set to 'Siraya 95A'... so maybe a fix is to actually install 
 that setting? I tried that and didn't have much luck (long story). 
 
-So you can change inherits to 'Generic TPU'... But still you can't select the user setting when creating a TPU custom filament: it will only show 'Generic TPU'... Super frustrating. Anyway, i'm not 100% confident in my eventual solutio... i'm 100% 
-sure it's not the most elegant way to achieve the goal.
+So you can change inherits to 'Generic TPU'... But still you can't select the user setting when creating a TPU custom filament: it will only show 'Generic TPU'... Super frustrating and why i think there's a key/value pair that is broken. There were a few settings with value 'null' where generic tpu = 0? I didnt copy them over... so maybe that's why it worked. Maybe Studio hates certain null entries. Generic TPU does have some null entries also though, so its not "all null are bad". Anyway, i'm not 100% confident in my eventual solution... i'm 100% sure it's not the most elegant way to achieve the goal.
 
 What might be nice is if there was a fialment setting validator that could pickup the issue with project.json... Maybe ill try work it out through trial and error but there are a fair few key/value pairs to try
 
