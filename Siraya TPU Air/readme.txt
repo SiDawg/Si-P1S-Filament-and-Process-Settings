@@ -2,7 +2,8 @@ Flex TPU Air 65A-82A Filament
 https://siraya.tech/products/flex-tpu-air-65a-82a-foaming-flexible-filament
 
 Multi step process used to generate settings in this folder. It wasnt as simple as "save the project filament as a user setting" (see bottom ramble):
-1) Download Air 3mf files from Siraya website (https://siraya.tech/pages/print-settings-download leads to a drive link: https://drive.google.com/file/d/1vxeuemK6ZQ2sgDM0BFez1ivRn01X6Du2/view?usp=drive_link used with thanks! But PLEASE if Siraya are reading this: create these as config files or something so i can avoid below... Links given are for P1S but they have for all Bambu printers and other brands. So you can use steps below to create your own user settings from these 3mf)
+1) Download Air 3mf files from Siraya website (https://siraya.tech/pages/print-settings-download leads to a drive link: https://drive.google.com/file/d/1vxeuemK6ZQ2sgDM0BFez1ivRn01X6Du2/view?usp=drive_link used with thanks! But PLEASE if Siraya 
+   are reading this: create these as config files or something so i can avoid below... Links given are for P1S but they have for all Bambu printers and other brands. So you can use steps below to create your own user settings from these 3mf)
 2) Save project filament settings as user filament settings (for explanation sake, 'project.json')
 3) Create a new temporary filament based on 'generic tpu': copy the created filament setting from your filaments/base folder (generic.json)
 4) In filament settings 'edit' a generic TPU setting (e.g. the one you just created, or the standard generic direct, whatevevs) and this will form the basis of the new settings ('siraya.json')
@@ -18,7 +19,9 @@ Multi step process used to generate settings in this folder. It wasnt as simple 
 My theory is there's something about project.json which is malformed... it will save, but you can't use it in custom filament... The obvious reason is that the 'inherits' value is set to 'Siraya 95A'... so maybe a fix is to actually install 
 that setting? I tried that and didn't have much luck (long story). 
 
-So you can change inherits to 'Generic TPU'... But still you can't select the user setting when creating a TPU custom filament: it will only show 'Generic TPU'... Super frustrating and why i think there's a key/value pair that is broken. There were a few settings with value 'null' where generic tpu = 0? I didnt copy them over... so maybe that's why it worked. Maybe Studio hates certain null entries. Generic TPU does have some null entries also though, so its not "all null are bad". Anyway, i'm not 100% confident in my eventual solution... i'm 100% sure it's not the most elegant way to achieve the goal.
+So you can change inherits to 'Generic TPU'... But still you can't select the user setting when creating a TPU custom filament: it will only show 'Generic TPU'... Super frustrating and why i think there's a key/value pair that is broken. There were 
+a few settings with value 'null' where generic tpu = 0? I didnt copy them over... so maybe that's why it worked. Maybe Studio hates certain null entries. Generic TPU does have some null entries also though, so its not "all null are bad". Anyway, i'm 
+not 100% confident in my eventual solution... i'm 100% sure it's not the most elegant way to achieve the goal.
 
 What might be nice is if there was a fialment setting validator that could pickup the issue with project.json... Maybe ill try work it out through trial and error but there are a fair few key/value pairs to try
 
